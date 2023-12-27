@@ -2,12 +2,17 @@
 
 namespace WeatherApp.Model
 {
+    // Класс WeatherTemperatureConverter
+    // Оформлен в стиле паттерна Singleton
+    // Обеспечивает глобальную область видимости
+    // Гарантирует, что объект данного класса будет создан в единственном экземпляре
     public class WeatherTemperatureConverter
     {
         private static WeatherTemperatureConverter _instance;
 
         private WeatherTemperatureConverter() { }
 
+        // Метод для получения экземпляра класса WeatherTemperatureConverter
         public static WeatherTemperatureConverter GetInstance()
         {
             if (_instance == null)
@@ -18,6 +23,7 @@ namespace WeatherApp.Model
             return _instance;
         }
 
+        // Метод для конвертирования градусов из Кельвина в Цельсий
         public void ConvertToCelsiusFromKelvin(WeatherResponseBodyMain main)
         {
             double kelvin = 273.15;

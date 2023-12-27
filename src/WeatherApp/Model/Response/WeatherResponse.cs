@@ -7,6 +7,9 @@ using WeatherApp.Model.Response.Body;
 
 namespace WeatherApp.Model.Response
 {
+    // Класс WeatherResponse
+    // Создан для сохранения всех данных из JSON файла
+    // Наименование полей согласно ответу от сервиса в виде JSON файла
     public class WeatherResponse
     {
         // Variable-naming like in JSON file of OpenWeatherMap servise response

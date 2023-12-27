@@ -4,6 +4,9 @@ using WeatherApp.Model.Response;
 
 namespace WeatherApp.Controller
 {
+    // Класс WeatherController
+    // Является частью бизнес-логики в паттерне Model-View-Controller
+    // Конструируется от модели и делегирует методы модели в своих одноименных
     public class WeatherController
     {
         private WeatherModel _model;
